@@ -14,6 +14,19 @@
 		.slide>div {
 			padding: 117px 120px 0;
 		}
+		.slide:after {
+			right: 3%;
+		}
+		.slide.cover:after {
+
+		} 
+		.slide.shout:after {
+			visibility: visible;
+		}
+		.notice {
+			font-size: 18px;
+			font-style: italic;
+		}
 	</style>
 </head>
 <body class="list">
@@ -90,6 +103,84 @@
 
 	<section class="slide shout"><div>
 		<img style="position: absolute;  width: 100%; top: 0; left: 0;" src="images/kak-zabit-gvozd.jpg" width="100%">
+	</div></section>
+
+	<section class="slide shout"><div>
+		<h2>Основные принципы</h2>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Основные принципы</h2>
+		<ul>
+			<li>отсутствие единой точки входа и отказа</li>
+			<li>избыточность</li>
+			<li>зеркалирование</li>
+			<li>балансировка нагрузки</li>
+			<li>мониторинг</li>
+			<li>изоляция</li>
+			<li>...</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Отсутствие единой точки входа и отказа</h2>
+		<center>
+			<img src="images/balancer.jpg" width="60%">
+		</center>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Избыточность и зеркалирование</h2>
+		<ul>
+			<li>дублирование всех сервисов</li>
+			<li>создание полных копий ресурсов на разных площадках или у разных провайдеров услуг</li>
+			<li>географическое распределение площадок</li>
+			<li>использование content delivery network</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Балансировка нагрузки и резервирование</h2>
+		<ul>
+			<li>DNS балансировка</li>
+			<li>балансировка по алгоритму</li>
+			<li>использование протоколов виртуального резервирования маршрутизаторов (VRRP, CARP и т.д.)
+			<br />
+			<div class="notice">Virtual Router Redundancy Protocol и Common Address Redundancy Protocol</div> 
+			</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Мониторинг</h2>
+		<ul>
+			<li>мониторинг основных показателей оборудования (CPU, ОЗУ, использование дисковой системы и т.д.)</li>
+			<li>мониторинг метрик репликации данных</li>
+			<li>мониторинг метрик сервисов (Apache, Nginx и т.д.)</li>
+			<li>мониторинг активности пользователей</li>
+			<li>мониторинг ошибок на сервере и клиенте</li>
+			
+			
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Мониторинг</h2>
+		<ul>
+            <li>мониторинг метрик сайта
+			<br />
+				<ul>
+					<li>количество заказов/регистраций в единицу времени</li>
+					<li>время генерации и отдачи страниц</li>
+					<li>другие user stories</li>
+				</ul>
+			</li>
+			<li>мониторинг доступности и срока действия доменного имени</li>
+			<li>...</li>
+			
+			
+			
+		</ul>
 	</div></section>
 
 
