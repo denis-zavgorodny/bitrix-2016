@@ -6,10 +6,30 @@
 	<meta name="viewport" content="width=792, user-scalable=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<link rel="stylesheet" href="styles/screen.css">
+	<link rel="stylesheet" href="fonts/play/stylesheet.css">
 	<style type="text/css">
+		
 		.slide {
 			background: #fff url(images/alterego-top.png) no-repeat left top;
 			background-size: 100% auto;
+			font-family: 'playregular', Arial;, sans;
+		}
+		.slide h2 {
+			font-family: 'playregular', Arial;, sans;	
+			font-size: 40px;
+		}
+		.first-slide {
+			background: #fff url(images/dark.jpg) no-repeat left top;
+			background-size: cover;
+		}
+		
+		html .first-slide > div {
+			padding: 90px 0 0;
+			width: 100%;
+			box-sizing: border-box;
+		}
+		.first-slide.slide.shout:after {
+			visibility: hidden;
 		}
 		.slide>div {
 			padding: 117px 120px 0;
@@ -27,6 +47,22 @@
 			font-size: 18px;
 			font-style: italic;
 		}
+		.slide.first-slide h2 {
+			color: #00aeef;
+		}
+
+		.slide-contact {
+			color: #fff;
+			font-size: 25px;
+			text-align: center;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+		}
+		.last-slide .slide-contact {
+			font-size: 35px;
+		}
 	</style>
 </head>
 <body class="list">
@@ -39,8 +75,18 @@
 		<p>Денис Завгородний</p>
 	</header>
 
-	<section class="slide shout"><div>
-		<h2 style="font-size: 80px; line-height: 2;">ОТКАЗОУСТОЙЧИВЫЕ СИСТЕМЫ<br />С «1С-БИТРИКС»</h2>
+	<section class="slide shout first-slide"><div>
+		<center>
+			<img src="images/logo-altereo.png" width="40%">
+		</center>
+		<div style="margin: 70px 0 0 0; font-size: 35px; color: #fff; text-align: center;">ОТКАЗОУСТОЙЧИВЫЕ СИСТЕМЫ С <span style="color: #00aeef;">«1С-БИТРИКС»</span></div>
+
+		<div class="slide-contact">
+			Денис Завгородний, AlterEGO<br />
+			zavgorodny@alterego.biz.ua
+		</div>
+
+
 	</div></section>
 
 	<section class="slide"><div>
@@ -352,6 +398,21 @@
 
 	<section class="slide shout"><div>
 		<h2 style="font-size: 80px; line-height: 2;">Спасибо!</h2>
+	</div></section>
+
+
+	<section class="slide shout first-slide last-slide"><div>
+		<center>
+			<img src="images/logo-altereo.png" width="40%">
+		</center>
+		<div style="margin: 20px 0 0 0; font-size: 35px; color: #fff; text-align: center;"><span style="color: #00aeef;">Контакты</span></div>
+
+		<div class="slide-contact">
+			Денис Завгородний, AlterEGO<br />
+			zavgorodny@alterego.biz.ua<br /><br />
+		</div>
+
+
 	</div></section>
 
 
